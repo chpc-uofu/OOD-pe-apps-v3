@@ -6,9 +6,9 @@ role: batch_connect
 description: |
   This app will launch a [Jupyter Notebook] server using [Python] on [Redwood] or on a [Bristlecone node].
 
-  To start the job promptly, use redwood-shared-short account and partition will be added in near future. 
+  To start the job promptly, use the redwood-shared-short account and partition. Choose the number of CPU cores and length of the job and push the **Launch** button. 
 
-  [GPU specification] is optional for the clusters and partitions that have them.
+  Memory and [GPU specification] are optional.
 
   [Jupyter Notebook]: https://jupyter.org/
   [Python]: https://www.python.org/

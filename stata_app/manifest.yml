@@ -5,11 +5,11 @@ subcategory: IDEs
 role: batch_connect
 description: |
   This app will launch a [STATA] GUI on [Redwood] or on a [Bristlecone node]. You will be able
-  to interact with the STATA GUI through a VNC session.
+  to interact with the STATA GUI through a remote desktop VNC session.
 
-  To start the job promptly, redwood-shared-short account and partition will be added in near future.  
+  To start the job promptly, use the redwood-shared-short account and partition. Choose the number of CPU cores and length of the job and push the **Launch** button. 
 
-  [GPU specification] is optional for the partitions that have them.
+  Memory and [GPU specification] are optional.
 
   [STATA]: https://www.stata.com/
   [Redwood]: https://www.chpc.utah.edu/documentation/guides/redwood.php
