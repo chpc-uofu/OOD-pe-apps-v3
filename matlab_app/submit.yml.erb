@@ -10,7 +10,7 @@ script:
   accounting_id: "<%= custom_accpart.slice(0..(custom_accpart.index(':')-1)) %>"
   queue_name: "<%= custom_accpart.slice((custom_accpart.index(':')+1)..-1) %>"
   email: <%= emailaddr %>
-  <%- if /bristlecone/.match(cluster) == nil -%>
+  <%- if /bristlecone/.match(cluster) == nil and /entwood/.match(cluster) == nil -%>
   native:
     - "-N"
     - "1"
@@ -27,8 +27,12 @@ script:
     - "--mem"
     - "<%= memtask %>G"
     <%- end -%>
-    <%- if nodelist != nil -%>
+    <%- if nodelist != "" -%>
     - "-w"
     - "<%= nodelist %>"
+    <%- end -%>
+    <%- if constraint != "" -%>
+    - "-C"
+    - "<%= constraint %>"
     <%- end -%>
   <%- end -%>

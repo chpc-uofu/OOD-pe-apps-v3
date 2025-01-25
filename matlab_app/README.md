@@ -1,11 +1,10 @@
-# Batch Connect - CHPC MATLAB
+# Batch Connect - OSC MATLAB
 
 ![GitHub Release](https://img.shields.io/github/release/osc/bc_osc_matlab.svg)
 [![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-A Batch Connect app designed for Open OnDemand that launches MATLAB on a CHPC infrastructure.
-
-Most content below is from the original [OSC app](https://github.com/OSC/bc_osc_matlab).
+A Batch Connect app designed for OSC OnDemand that launches MATLAB within an
+Owens batch job.
 
 ## Prerequisites
 
