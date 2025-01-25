@@ -1,0 +1,12 @@
+---
+name: LibreOffice
+category: Interactive Apps
+subcategory: IDEs
+role: batch_connect
+description: |
+  This app will launch a [LibreOffice] GUI on a [Redwood] or on a [Bristlecone node]. You will be able
+  to interact with the LibreOffice GUI through a VNC session.
+
+  [LibreOffice]: https://www.libreoffice.org/
+  [Redwood]: https://www.chpc.utah.edu/documentation/guides/redwood.php
+  [Bristlecone node]: https://www.chpc.utah.edu/documentation/guides/frisco-nodes.php

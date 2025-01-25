@@ -12,6 +12,7 @@ entries:
   desktop_basic: []
   desktop_expert: []
   jupyter_app: []
+  libreoffice_app: []
   matlab_app: []
   matlab_html_app: []
   rstudio_server_app: []
