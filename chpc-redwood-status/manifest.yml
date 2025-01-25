@@ -1,0 +1,6 @@
+---
+name: Redwood Node Status
+description: |-
+  Detailed Node Status of the Redwood Cluster
+category: Clusters
+icon: fa://tachometer

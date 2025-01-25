@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/uufs/chpc.utah.edu/sys/ondemand/chpc-pe-apps-v3.4/chpc-redwood-status/./bin/plot-rw-node-status.py", line 16, in <module>
+    statdict = pd.read_csv(statfile,names='U R PD T'.split(),delim_whitespace=True).to_dict(orient='records')[0]
+  File "/uufs/chpc.utah.edu/sys/installdir/r8/python/3.10.3/lib/python3.10/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/uufs/chpc.utah.edu/sys/installdir/r8/python/3.10.3/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/uufs/chpc.utah.edu/sys/installdir/r8/python/3.10.3/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 581, in _read
+    return parser.read(nrows)
+  File "/uufs/chpc.utah.edu/sys/installdir/r8/python/3.10.3/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1250, in read
+    index, columns, col_dict = self._engine.read(nrows)
+  File "/uufs/chpc.utah.edu/sys/installdir/r8/python/3.10.3/lib/python3.10/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 225, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 805, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 883, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 945, in pandas._libs.parsers.TextReader._convert_column_data
+pandas.errors.ParserError: Too many columns specified: expected 4 and found 3
