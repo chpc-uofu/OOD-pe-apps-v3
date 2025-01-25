@@ -1,3 +1,9 @@
+
+# Ruby
+.bundle/
+vendor/
+
+# Other
 *.img
 *.simg
 git.info
