@@ -2,6 +2,8 @@
 
 # set -x
 
+echo Runing on `hostname`
+
 # Load the required environment
 module purge
 
@@ -26,9 +28,10 @@ module purge
 
 <%- end -%>
 
-if [ ! -d "/scratch/local/${USER}" ]; then
-    mkdir /scratch/local/${USER}
-fi
+# No need to do this as this is created by the job now
+#if [ ! -d "/scratch/local/${USER}" ]; then
+#    mkdir /scratch/local/${USER}
+#fi
 
 WORKDIR=/scratch/local/${USER}/${SLURM_JOB_ID}
 
@@ -47,7 +50,7 @@ sed 's/^ \{2\}//' > "${RSESSION_WRAPPER_FILE}" << EOL
   #!/usr/bin/env bash
 
   # source Lmod if it's not already sourced - starts in clean environment
-  source /etc/profile.d/chpc.sh
+  source /etc/profile.d/z00_chpc.sh
 # bring SLURM environment into the R session
   source ${PWD}/slurmenv.sh
 
